@@ -37,10 +37,10 @@ def get():
     args = pr.parse_args()
     my_dash_id = args['did']
 
-    server = 'tcp:fr0-viaas-089\INWP2A2401,10010'
-    database = 'DBWP2A2407'
+    server = ''
+    database = ''
     cnxn = pyodbc.connect(
-        'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';Trusted_Connection=yes;')
+        '')
     global cursor
     cursor = cnxn.cursor()
     query = ' Select  TOP 20 ca.UserId, ru.DisplayName from cockpit.Access ca INNER JOIN ref.[User] ru ON ca.UserId=ru.UserId WHERE ca.DashboardID = ?  GROUP BY ca.UserId,ru.DisplayName'
