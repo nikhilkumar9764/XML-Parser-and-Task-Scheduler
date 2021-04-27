@@ -1,0 +1,108 @@
+#include<bits/stdc++.h>
+using namespace std;
+using ll = long long;
+using ld = long double;
+ll dist[100005];
+ll parent[100005];
+ll getmin(bool sst[],ll n)
+{
+    ll min_val = INT_MAX,min_ind=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(sst[i] == false && dist[i]<=min_val)
+        {
+            min_val = dist[i];
+            min_ind = i;
+        }
+    }
+    return min_ind;
+}
+
+void printpath(ll i)
+{
+    if(parent[i] == -1)
+    {
+        return;
+    }
+    printpath(parent[i]);
+    cout<<i<<" ";
+}
+
+
+void printsol(ll n,ll src)
+{
+    cout<<"Vertex\tDistance\tPath\n";
+    for(int i=0;i<=n;i++)
+    {
+        if(i!=src)
+        {
+           cout<<src<<"--->"<<i<<" "<<dist[i]<<" "<<src;
+           printpath(i);
+        }
+    }
+}
+void dijkstra(vector<vector<ll>> &adj,ll n,ll src)
+{
+    bool sst[n+1] = {false};
+    for(int i=0;i<n;i++)
+    {
+        parent[0] = -1;
+        dist[i] = INT_MAX;
+    }
+    dist[src] = 0;
+    for(int cnt=0;cnt<n-1;cnt++)
+    {
+        ll u = getmin(sst,n);
+        sst[u] = true;
+        for(int j=0;j<n;j++)
+        {
+            if(!sst[j] && adj[u][j] > 0 && dist[u]!=INT_MAX && dist[u]+adj[u][j]<dist[j])
+            {
+                parent[j] = u;
+                dist[j] = dist[u]+adj[u][j];
+            }
+        }
+    }
+    printsol(n,src);
+}
+int main()
+{
+    ll n,m;
+    cin>>n>>m;
+    vector<vector<ll>> adj(n,vector<ll>(n));
+    ll x,y,w;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            adj[i][j] = 0;
+        }
+    }
+    for(int i=0;i<m;i++)
+    {
+        cin>>x>>y>>w;
+        adj[x-1][y-1] = w;
+    }
+    ll src;
+    cin>>src;
+    dijkstra(adj,n,src);
+}
+
+
+
+9
+14
+0 1 4 
+0 7 8
+1 7 11 
+1 2 8
+7 6 1 
+7 8 7
+2 8 2
+6 8 6
+6 5 2 
+2 5 4
+2 3 7
+3 5 14
+3 4 9
+5 4 10

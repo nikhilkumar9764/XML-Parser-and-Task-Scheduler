@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title> TASK CONFIG PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./Styles/taskconfig.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src = "./Scripts/taskConfig.js"></script>
+</head>
+
+<body>
+    <div id = "header">
+       <p id="para1">TASK CONFIG PAGE</p> 
+    </div>
+    <br/>
+    <br/>
+    <div id = "b1" >
+        <label for = "task_inp">Select a task to perform?</label>
+        <select id = "task_inp" style = "font-family: icomoon">
+            <option selected>---</option>
+            <option id = "tsk1">Dashboard Performance Testing</option>
+        </select>
+        <br>
+        <label for = "choice_inp">Select a operation you would like to perform?</label>
+        <select id = "choice_inp" style = "font-family: icomoon">
+            <option selected>---</option>
+            <option id = "op1">Add a task to perform</option>
+            <option id = "op2">Update an existing task</option>
+            <option id = "op3">Delete a task</option>
+        </select> 
+        <br/>
+        <button id = "btx2" type ="submit" class = "btn btn-primary" onclick = "taskaction()">Go</button>
+        <br/>
+        <br/>
+    </div>   
+     <br>
+     <br>
+
+    <div id = "footer">&copy  Designed by Gladiators, EBAM BAM</div>
+</body>
+</html>

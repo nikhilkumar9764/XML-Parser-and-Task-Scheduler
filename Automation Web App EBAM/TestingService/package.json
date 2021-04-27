@@ -1,0 +1,15 @@
+{
+  "name": "testingservice",
+  "version": "1.0.0",
+  "description": "A WebTesting Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Nikhil Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^8.0.0"
+  }
+}

@@ -1,0 +1,74 @@
+#header
+{
+        background-image: url("/Assets/image1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height : 90px;
+        border : 5px solid green;
+}
+
+body{
+        background-image: url("/Assets/image2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#para1{
+        font-size: 40px;
+        font-family: sans-serif;
+        size: 150px;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+}
+
+#b1{
+         position : relative;
+         top : 280px;
+         left : 300px;
+}
+
+#btx1{
+        width: 170px;
+        height: 100px;
+        display: inline-block;
+        padding: 15px 15px;
+        font-size: 16px;
+        font-weight : bold;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(167, 159, 159);
+        background-color : orange;
+}
+
+#btx2{
+        width: 170px;
+        height: 100px;
+        display: inline-block;
+        padding: 15px 15px;
+        font-size: 16px;
+        color: white;
+        font-weight : bold;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(167, 159, 159);
+        background-color : orange;
+}
+
+#footer
+{
+        position: fixed;
+        text-align:center;
+        font-size: medium;
+        color: white;
+        bottom: 0px;
+        width : 100%;
+        background-color: grey;
+        background-position: bottom 0px left 40px;
+}
+

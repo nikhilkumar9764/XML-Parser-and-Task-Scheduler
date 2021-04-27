@@ -1,0 +1,16 @@
+{
+  "/cockpit/LastTenAccessed": ["GET","self.controller.getLastTenAccessed"],
+  "/cockpit/DashboardInfo" : ["GET", "self.controller.getDashboardInfo"],
+  "/cockpit/DataSourceInfo" : ["GET","self.controller.getDataSourceInfo"],
+  "/cockpit/CustomQuery" : ["GET","self.controller.getCustomQueries"],
+  "/cockpit/Query" : ["GET","self.controller.getAllQueries"],
+  "/cockpit/Indexes" : ["GET","self.controller.getIndexes"],
+  "/cockpit/CustomQueryExecutionTime" :["GET", "self.controller.getCustomQueryExecTime"],
+  "/cockpit/IndexSQLScript" :["GET", "self.controller.getIndexSQLScript"],
+  "/task/AddTask" : ["POST","self.controller.addNewTask"],
+  "/task/ShowTasks" : ["POST","self.controller.getAllTasks"],
+  "/task/UpdateTask" : ["POST","self.controller.UpdateTask"],
+  "/task/DeleteTask" : ["POST","self.controller.DeleteTask"],
+  "/task/Task" : ["POST", "self.controller.getTaskDetails"],
+  "/task/TaskStatus" : ["POST", "self.controller.getTasksStatus"]
+}

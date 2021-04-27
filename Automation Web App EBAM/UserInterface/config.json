@@ -1,0 +1,16 @@
+{
+    "/cockpit" : "UserInterface/index.html",
+    "/cockpit/dashboard_info" : "UserInterface/dashboard_info.html",
+    "/Styles/index_style.css" : "UserInterface/Styles/index_style.css",
+    "/Assets/image1.jpg" : "UserInterface/Assets/image1.jpg",
+    "/Assets/image2.jpg" : "UserInterface/Assets/image2.jpg",
+    "/cockpit/Styles/dashboard_info_style.css" : "UserInterface/Styles/dashboard_info_style.css",
+    "/cockpit/task/Styles/taskconfig.css" : "UserInterface/Styles/taskconfig.css",
+    "/cockpit/task/Styles/taskview.css" : "UserInterface/Styles/taskview.css",
+    "/cockpit/Scripts/dashboard_info.js" : "UserInterface/Scripts/dashboard_info.js",
+    "/cockpit/task" : "UserInterface/task.html",
+    "/cockpit/task/Config" : "UserInterface/taskConfig.html",
+    "/cockpit/task/View" : "UserInterface/taskView.html",
+    "/cockpit/task/Scripts/taskConfig.js" : "UserInterface/Scripts/taskConfig.js",
+    "/cockpit/task/Scripts/taskView.js" : "UserInterface/Scripts/taskView.js"
+}

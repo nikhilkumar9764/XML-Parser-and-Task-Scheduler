@@ -1,0 +1,49 @@
+//Prim's minimum spanning tree (MST)
+#include<bits/stdc++.h>
+using namespace std;
+using ll = long long int;
+#define MOD (ll) (1e9+7)
+vector<pair<ll,ll>> vec[100005];
+bool visited[100005] = {false};
+int main()
+{
+	ll n,m;
+	cin>>n>>m;
+	ll x,y,w;
+	for(int i=0;i<m;i++)
+	{
+		cin>>x>>y>>w;
+		vec[x].push_back({y,w});
+		vec[y].push_back({x,w});
+	}
+	ll src;
+	cin>>src;
+	set<pair<ll,ll>> se;
+	se.insert({0,src});
+	vector<ll> mst;
+	while(!se.empty())
+	{
+		ll dist = se.begin()->first;
+		ll vert = se.begin()->second;
+		if(!visited[vert])
+		{
+			 visited[vert] = true;
+			 mst.push_back(vert);
+		}
+		se.erase(se.begin());
+		for(auto it:vec[vert])
+		{
+			if(!visited[it.first])
+			{
+				se.insert({it.second,it.first});
+			}
+		}
+	}
+	cout<<"Minimum spanning tree from the given source vertex\n";
+	for(auto pt:mst)
+	{
+		cout<<pt<<"---->";
+	}
+	cout<<"\n";
+}
+

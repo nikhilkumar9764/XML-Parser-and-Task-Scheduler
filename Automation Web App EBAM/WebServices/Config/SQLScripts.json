@@ -1,0 +1,6 @@
+{
+  "LastTenAccesed" : "WebServices/SQLScripts/GetLastTenAccesed.sql",
+  "DashboardXML" : "WebServices/SQLScripts/GetDashboardXML.sql",
+  "DashboardInfo" : "WebServices/SQLScripts/GetDashboardInfo.sql",
+  "RunStatusDashboards" : "WebServices/SQLScripts/GetRunStatusDashboards.sql"
+}

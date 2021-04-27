@@ -1,0 +1,70 @@
+
+#header
+{
+        background-image: url("/Assets/image1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height : 90px;
+        border : 5px solid green;
+}
+
+#para1{
+  font-size: 40px;
+  font-family: sans-serif;
+  size: 150px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+#b1
+{
+  margin: auto;
+  width: 50%;
+  text-align : center;
+  border: 3px solid blueviolet;
+  padding: 10px;
+}
+
+table, th, td {
+  border: 2px solid black;
+  margin : auto;
+  width : 50%;
+}
+
+thead{
+  font-size: medium;
+  font-weight: bold;
+}
+
+#footer
+{
+        position: fixed;
+        text-align:center;
+        font-size: medium;
+        color: white;
+        bottom: 0px;
+        width : 100%;
+        background-color: grey;
+        background-position: bottom 10px left 60px;
+}
+
+#txtar{
+  margin : 0 auto; 
+}
+
+#fp{
+    margin: auto;
+    width: 70%;
+    text-align : center;
+    border: 3px solid greenyellow;
+    padding: 10px;
+  }
+
+
+#btx{
+        margin: auto;
+        text-align : center;
+}

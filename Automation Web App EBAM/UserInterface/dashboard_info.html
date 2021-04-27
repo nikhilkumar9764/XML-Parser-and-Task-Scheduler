@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>EBAM AUTOMATION TOOL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./Styles/dashboard_info_style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src = "./Scripts/dashboard_info.js"></script>
+</head>
+
+<body>
+    <div id = "header">
+       <p id="para1">EBAM AUTOMATION TOOL</p> 
+    </div>
+    <br/>
+    <br/>
+    <div id = "b1" >
+        <label for = "dashboard_inp">Enter the dashboard id ?:</label>
+        <input type ="text" id ="dashboard_inp"></input>
+        <br/>
+        <br/>
+        <label for = "choice_inp">Operation that you would like to perform :</label>
+        <select id = "choice_inp" style = "font-family: icomoon">
+            <option selected>---</option>
+            <option id = "op1">Get Last 10 Accessed</option>
+            <option id = "op2">Get Dashboard Info</option>
+            <option id = "op3">Get Dashboard DataSources</option>
+            <option id = "op4">Get Custom SQL</option>
+            <option id = "op5">Get Columns used in Relation and Filters to create Indexes</option>
+            <option id = "op6">Get Query Execution Time</option>
+			<option id = "op7">Get All SQL Queries</option>
+        </select > 
+        <br/>
+        <button id = "btx2" type ="submit" class = "btn btn-primary" onclick = "getdetails()">Go</button>
+        <br/>
+        <br/>
+        <div id= "result" class = "alert alert-danger alert-dismissible" style = "display:none">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+    </div>    
+     <br>
+     <br>
+    <table id = "mytable">
+    </table>
+    
+
+    <div id = "footer">&copy  Designed by Gladiators, EBAM BAM</div>
+</body>
+</html>

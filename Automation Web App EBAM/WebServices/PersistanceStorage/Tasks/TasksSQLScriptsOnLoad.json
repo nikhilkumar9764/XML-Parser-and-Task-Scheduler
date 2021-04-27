@@ -1,0 +1,6 @@
+{
+  "CreateTaskType" : "WebServices/PersistanceStorage/Tasks/Scripts/CreateTaskType.sql",
+  "CreateTaskInfo" : "WebServices/PersistanceStorage/Tasks/Scripts/CreateTaskInfo.sql",
+  "CreateTaskResult" : "WebServices/PersistanceStorage/Tasks/Scripts/CreateTaskResult.sql",
+  "IndexTaskResult" : "WebServices/PersistanceStorage/Tasks/Scripts/CreateIndexTaskResult.sql"
+}
